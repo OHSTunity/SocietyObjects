@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="TODO! Place in System namespace. Same as SystemUser etc.">
+    <Position X="1.635" Y="1.219" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Concepts.Ring1.Modification">
+    <Position X="1" Y="11" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Modification.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Modification.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAABAIAAAAAAAIAABAAAAAAAAAAAACAAAAAAAAAAAA=</HashCode>
+      <FileName>System\Modification.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Modifier">
+    <Position X="9.75" Y="7" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Modifier.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Modifier.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAIAgAAAAAAAAAAACAAAAA=</HashCode>
+      <FileName>System\Modifier.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Participant">
+    <Position X="9.5" Y="5.25" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Participant.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Participant.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAIAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Places\Participant.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="WhoIs" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Concepts.Ring1.Event" Collapsed="true">
+    <Position X="2.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Event.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Event.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>RAiQAAABQiAAAAAAIAAAEAIAAAghKCABCCEAAIgAAAA=</HashCode>
+      <FileName>Events\Event.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Something" Collapsed="true">
+    <Position X="13.25" Y="2" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Something.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Something.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+      <Enum Name="Concepts.Ring1.Something.When" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Something.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QABAATAFyAPkCIREWCKAAEQBAyhQQAIAAEAQgIAMBBk=</HashCode>
+      <FileName>Something.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Concepts.Ring1.Somebody" Collapsed="true">
+    <Position X="13.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAABAgAAiIAABAAAAAABAgAQAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>PersonsAndOrganisations\Somebody.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Role" Collapsed="true">
+    <Position X="13.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAQAAAAAAAABA=</HashCode>
+      <FileName>Role.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.ParticipatingThing">
+    <Position X="7" Y="3.5" Width="2" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.ParticipatingThing.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ParticipatingThing.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAIAAAAAAAAAAAAAAACAAACAAAAA=</HashCode>
+      <FileName>Places\ParticipatingThing.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ParticipatesIn" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Concepts.Ring1.Attribute">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Attribute.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Attribute.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAACIAAAAAgAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Attribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Insertion">
+    <Position X="4.25" Y="10.75" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Insertion.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Insertion.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System\Insertion.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Inserted">
+    <Position X="8.5" Y="8.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Inserted.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Inserted.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="InsertedObject" Type="Concepts.Ring1.Something" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10" Y="9" />
+        <Point X="18.5" Y="9" />
+        <Point X="18.5" Y="2.562" />
+        <Point X="14.75" Y="2.562" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAABA=</HashCode>
+      <FileName>System\Inserted.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="InsertedObject" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Concepts.Ring1.ObjectChange" Collapsed="true">
+    <Position X="2.25" Y="9.5" Width="1.5" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.ObjectChange.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>System\ObjectChange.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>System\ObjectChange.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

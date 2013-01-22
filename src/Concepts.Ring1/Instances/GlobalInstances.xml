@@ -1,0 +1,13 @@
+﻿<!-- The global instances of Society Objects Ring1. Created when a new database is created -->
+<!-- Move to the Ring1.Instances subfolder -->
+<!-- For the time being this is solved using ISingletonKind, check the implementation for further information. Carl -->
+<Concepts>
+  <Nothing      ObjectID="100000001" Name="Nothing"/>     <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <Everything   ObjectID="100000002" Name="Everything"/>  <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <Nowhere      ObjectID="100000003" Name="Nowhere"/>     <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <Nobody       ObjectID="100000004" Name="Nobody"/>      <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <Everybody    ObjectID="100000005" Name="Everybody"/>   <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <Everywhere   ObjectID="100000006" Name="Everywhere"/>  <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <False        ObjectID="100000007" Name="False"/>       <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+  <True         ObjectID="100000008" Name="True"/>        <!-- Mark II. Concept introduced by Joachim Wester. Approved by meeting #? -->
+</Concepts>

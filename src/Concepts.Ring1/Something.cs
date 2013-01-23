@@ -182,7 +182,8 @@ namespace Concepts.Ring1
         /// <returns>All roles of the given typ T</returns>
         public SqlResult<T> Roles<T>() where T : Role
         {
-            return Db.SQL<T>("SELECT r FROM Role r WHERE r.WhatIs=?", this);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=?", SqlNamespaceHelper.GetSafe<T>()), this);
         }
         
         /// <summary>
@@ -192,7 +193,8 @@ namespace Concepts.Ring1
         /// <returns>All roles of the given type T</returns>
         public SqlResult<T> ImplicitRoles<T>() where T : Relation
         {
-            return Db.SQL<T>("SELECT r FROM Relation r WHERE r.ToWhat=?", this);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.ToWhat=?", SqlNamespaceHelper.GetSafe<T>()), this);
         }
         
         /// <summary>
@@ -226,7 +228,9 @@ namespace Concepts.Ring1
         /// <returns>All relations of the given type T</returns>
         public SqlResult<T> RelationsTo<T>(Something toWhat) where T : Relation
         {
-            return Db.SQL<T>("SELECT r FROM Relation r WHERE r.WhatIs=? AND r.ToWhat=?", this, toWhat);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=? AND r.ToWhat=?", 
+                SqlNamespaceHelper.GetSafe<T>()), this, toWhat);
         }
 
         /// <summary>
@@ -237,7 +241,9 @@ namespace Concepts.Ring1
         /// <returns>All relations of the given type T</returns>
         public SqlResult<T> ImplicitRelationsTo<T>(Something whatIs) where T : Relation
         {
-            return Db.SQL<T>("SELECT r FROM Relation r WHERE r.WhatIs=? AND r.ToWhat=?", whatIs, this);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=? AND r.ToWhat=?",
+                SqlNamespaceHelper.GetSafe<T>()), whatIs, this);
         }
         
         /// <summary>
@@ -275,7 +281,9 @@ namespace Concepts.Ring1
             where T_Object : Something
             where T_Relation : Relation
         {
-            return Db.SQL<T_Object>("SELECT s FROM Something s JOIN Relation r ON r.ToWhat=s WHERE r.WhatIs=?", this);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T_Object>(String.Format("SELECT s FROM {0} s JOIN {1} r ON r.ToWhat=s WHERE r.WhatIs=?",
+                SqlNamespaceHelper.GetSafe<T_Object>(), SqlNamespaceHelper.GetSafe<T_Relation>()), this);
         }
 
         /// <summary>
@@ -288,7 +296,9 @@ namespace Concepts.Ring1
             where T_Object : Something
             where T_Relation : Relation
         {
-            return Db.SQL<T_Object>("SELECT s FROM Something s JOIN Relation r ON r.WhatIs=s WHERE r.ToWhat=?", this);
+            //TODO:Change to typeof sql string
+            return Db.SQL<T_Object>(String.Format("SELECT s FROM {0} s JOIN {1} r ON r.WhatIs=s WHERE r.ToWhat=?",
+                 SqlNamespaceHelper.GetSafe<T_Object>(), SqlNamespaceHelper.GetSafe<T_Relation>()), this);
         }
         
         /// <summary>

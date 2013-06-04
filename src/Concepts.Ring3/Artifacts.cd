@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Ring3.PaperSet">
+    <Position X="3" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Artifacts\PaperSet.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Ring3.PaperSet.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Artifacts\PaperSet.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Ring3.Book">
+    <Position X="3" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Artifacts\Book.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Ring3.Book.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Artifacts\Book.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Ring1.PhysicalArtifact" Collapsed="true">
+    <Position X="3" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+    <NestedTypes>
+      <Class Name="Ring1.PhysicalArtifact.Kind" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Ring1.MassObject" Collapsed="true">
+    <Position X="3" Y="2.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Ring1.Something" Collapsed="true">
+    <Position X="3" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Ring3.ComputerSystem">
+    <Position X="5.5" Y="5" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>Artifacts\ComputerSystem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAQAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PartOfComputerSystem" />
+    </ShowAsAssociation>
+    <NestedTypes>
+      <Class Name="Ring3.ComputerSystem.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Artifacts\ComputerSystem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="PartOfComputerSystem" Type="Ring3.ComputerSystem" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6.382" Y="6.319" />
+        <Point X="6.382" Y="6.694" />
+        <Point X="8.375" Y="6.694" />
+        <Point X="8.375" Y="5.625" />
+        <Point X="8" Y="5.625" />
+      </Path>
+    </AssociationLine>
+  </Class>
+</ClassDiagram>

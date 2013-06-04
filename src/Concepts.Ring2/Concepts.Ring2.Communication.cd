@@ -1,0 +1,244 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="Concepts.Ring2 contains objects that relate to at least 25% of the human population on earth on at least a weekly basis. Not all members are shown. The diagram is intended to provide an overview and to ease understanding of the classes. Therefor only the foundamental members of each class are shown. &#xD;&#xA;&#xD;&#xA;Copyright © SocietyObjects Ltd 2003, 2004, 2005&#xD;&#xA;Author: Joachim Wester ">
+    <Position X="0.5" Y="0.5" Height="0.962" Width="9.203" />
+  </Comment>
+  <Comment CommentText="Följer URI och URIPath regelverket?&#xD;&#xA;">
+    <Position X="12.193" Y="0.5" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Concepts.Ring2.HyperLink">
+    <Position X="9.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URLRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.HyperLink.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Communication\URLRole.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring2.URL" Collapsed="true">
+    <Position X="12.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.TelephoneNoRole" Collapsed="true">
+    <Position X="14.5" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\TelephoneNoRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.TelephoneNo" Collapsed="true">
+    <Position X="5.5" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\TelephoneNo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.MobilePhoneNo" Collapsed="true">
+    <Position X="12.25" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\MobilePhoneNo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.HomePhoneNo" Collapsed="true">
+    <Position X="14.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\HomePhoneNo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.FaxPhoneNo" Collapsed="true">
+    <Position X="16.75" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\FaxPhoneNo.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.EMailRole" Collapsed="true">
+    <Position X="19" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\EMailRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.EMailAddress" Collapsed="true">
+    <Position X="1" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\EMailAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.InternetAddress" Collapsed="true">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URI\InternetAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAASAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Port" Collapsed="true">
+    <Position X="28" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URI\Port.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.URI" Collapsed="true">
+    <Position X="7.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URI\URI.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAIEAAAAAAAECAAACBAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.URIPath" Collapsed="true">
+    <Position X="3.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\URI\URIPath.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.AbstractAddress">
+    <Position X="14.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Methods" Collapsed="true" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.AbstractAddress.Kind" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring1.AbstractAddressRole" Collapsed="true">
+    <Position X="9.75" Y="6.5" Width="1.75" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Address" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Concepts.Ring2.AddressRole" Collapsed="true">
+    <Position X="2.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\AddressRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Street" Collapsed="true">
+    <Position X="16.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\Street.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Postcode" Collapsed="true">
+    <Position X="14.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\Postcode.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.City" Collapsed="true">
+    <Position X="19" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\City.cs</FileName>
+      <HashCode>AAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Country" Collapsed="true">
+    <Position X="21.25" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\Country.cs</FileName>
+      <HashCode>IAAAAAgAAAAAAAAAAAAAAQAAAAAAAABAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.HomeAddress" Collapsed="true">
+    <Position X="5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\HomeAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.HomepageURL" Collapsed="true">
+    <Position X="7.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\HomepageURL.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Address" Collapsed="true">
+    <Position X="23.5" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\Address.cs</FileName>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.AbstractCrossReference">
+    <Position X="9.5" Y="8" Width="2" />
+    <TypeIdentifier>
+      <FileName>Communication\CrossReference.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.AbstractCrossReference.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Communication\CrossReference.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring2.WebAddress">
+    <Position X="7.25" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\WebAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.WebAddress.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Communication\WebAddress.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring2.MailAddress" Collapsed="true">
+    <Position X="0.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Communication\MailAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.SpatialAddress" Collapsed="true">
+    <Position X="20.25" Y="4" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.House" Collapsed="true">
+    <Position X="25.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Addressing\House.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.StorageArea" Collapsed="true">
+    <Position X="5" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Storage\StorageArea.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Storage" Collapsed="true">
+    <Position X="19.75" Y="9.25" Width="2.75" />
+    <TypeIdentifier>
+      <FileName>Storage\Storage.cs</FileName>
+      <HashCode>AIAABAiAAAEAAAAAAAIAAABAAAAAAAAAACBAIAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

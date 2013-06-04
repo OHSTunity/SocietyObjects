@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.20706</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectTypeGuids>{C86118D7-451E-4933-BFEE-A1EFDB162FD7};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{8F011ABB-1A67-4287-891B-BA1F29D3B044}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Concepts.Ring2</RootNamespace>
+    <AssemblyName>Concepts.Ring2</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>$(SocietyObjects)\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>$(SocietyObjects)\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Starcounter">
+      <HintPath>$(StarcounterBin)\Starcounter.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Starcounter.Internal">
+      <HintPath>$(StarcounterBin)\Starcounter.Internal.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Addressing\Digital\DigitalAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Addressing\Digital\IP\InternetAddress.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Addressing\Digital\TelephoneNumbers\Relations\FaxPhoneNumber.cs" />
+    <Compile Include="Addressing\Digital\TelephoneNumbers\Relations\HomePhoneNumber.cs" />
+    <Compile Include="Addressing\Digital\TelephoneNumbers\Relations\MobilePhoneNumber.cs" />
+    <Compile Include="Addressing\Digital\TelephoneNumbers\Relations\OfficePhoneNumber.cs" />
+    <Compile Include="Addressing\Digital\TelephoneNumbers\Relations\TelephoneNumberRelation.cs" />
+    <Compile Include="Addressing\Digital\TelephoneNumbers\TelephoneNumber.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Addressing\Digital\URI\EMailAddress.cs" />
+    <Compile Include="Addressing\Digital\URI\Port.cs" />
+    <Compile Include="Addressing\Digital\URI\Relations\CrossReference.cs" />
+    <Compile Include="Addressing\Digital\URI\Relations\EMailRelation.cs" />
+    <Compile Include="Addressing\Digital\URI\Relations\HomepageURL.cs" />
+    <Compile Include="Addressing\Digital\URI\Relations\URLRole.cs" />
+    <Compile Include="Addressing\Digital\URI\Relations\WebAddress.cs" />
+    <Compile Include="Addressing\Digital\URI\Scheme.cs" />
+    <Compile Include="Addressing\Digital\URI\URI.cs" />
+    <Compile Include="Addressing\Digital\URI\URIPath.cs" />
+    <Compile Include="Addressing\Digital\URI\URL.cs" />
+    <Compile Include="Artifacts\Artifact.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Artifacts\Creator.cs" />
+    <Compile Include="Commerce\Barcode\Barcode.cs" />
+    <Compile Include="Commerce\Consumer.cs" />
+    <Compile Include="Commerce\TradeEvents\DeliveryMethod.cs" />
+    <Compile Include="Commerce\TradeEvents\PaymentTerms.cs" />
+    <Compile Include="Commerce\TradeEvents\TransferCondition.cs" />
+    <Compile Include="Commerce\Vendible\Currency.cs" />
+    <Compile Include="Commerce\Vendible\IVendibleIdentifier.cs" />
+    <Compile Include="Commerce\Vendible\IVendibleIdentifierLogic.cs" />
+    <Compile Include="Commerce\Vendible\Monetary.cs" />
+    <Compile Include="Commerce\Vendible\PackageTemplate.cs" />
+    <Compile Include="Commerce\Vendible\Right.cs" />
+    <Compile Include="Commerce\Vendible\Vendible.cs" />
+    <Compile Include="Commerce\Vendible\VendibleCategory.cs" />
+    <Compile Include="Commerce\Vendible\VendibleLevel.cs" />
+    <Compile Include="Identifier.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Work\AffiliatedOrganisation.cs" />
+    <Compile Include="Work\AffiliatedPerson.cs" />
+    <Compile Include="Work\Company.cs" />
+    <Compile Include="Work\CompanyCategory.cs" />
+    <Compile Include="Work\CompanyCategoryMember.cs" />
+    <Compile Include="Work\Employee.cs" />
+    <Compile Include="Work\Organisation.cs" />
+    <Compile Include="Work\PersonCategory.cs" />
+    <Compile Include="Work\PersonCategoryMember.cs" />
+    <Compile Include="Work\Subsidiary.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Concepts.Ring1\Concepts.Ring1.csproj">
+      <Project>{cbb52392-c024-42ec-b358-f8287ea9ff2e}</Project>
+      <Name>Concepts.Ring1</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Addressing\Places\Postal\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(StarcounterBin)\Starcounter.MsBuild.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

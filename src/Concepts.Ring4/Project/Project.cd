@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Concepts.Ring1.Event" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.EventRole">
+    <Position X="3.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier />
+    <ShowAsAssociation>
+      <Property Name="Subset" />
+      <Property Name="Superset" />
+    </ShowAsAssociation>
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.EventRole.Kind" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="Subset" Type="Concepts.Ring1.Event" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="8.562" />
+        <Point X="3.594" Y="8.562" />
+        <Point X="3.594" Y="5.438" />
+        <Point X="2.5" Y="5.438" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Superset" Type="Concepts.Ring1.Event" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.75" Y="8.062" />
+        <Point X="3.594" Y="8.062" />
+        <Point X="3.594" Y="5.125" />
+        <Point X="2.5" Y="5.125" />
+      </Path>
+    </AssociationLine>
+  </Class>
+  <Class Name="Concepts.Ring1.EventSubset" Collapsed="true">
+    <Position X="2" Y="10.75" Width="1.5" />
+    <TypeIdentifier />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.EventSubset.Kind" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring1.Relation" Collapsed="true">
+    <Position X="5.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Role" Collapsed="true">
+    <Position X="5.75" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Participant" Collapsed="true">
+    <Position X="8.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier />
+    <InheritanceLine Type="Concepts.Ring1.ParticipantingThing" ManuallyRouted="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.875" Y="8.13" />
+        <Point X="7.875" Y="8.9" />
+        <Point X="9.125" Y="8.9" />
+        <Point X="9.125" Y="9.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Concepts.Ring1.ParticipantingThing" Collapsed="true">
+    <Position X="7" Y="7.5" Width="1.75" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring4.Responsible" Collapsed="true">
+    <Position X="8.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Project\Responsible.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

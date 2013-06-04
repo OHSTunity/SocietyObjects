@@ -273,7 +273,7 @@ namespace Concepts.Ring1
             return addressRelation;
         }
 
-        public string ToReadableString()
+        public override string ToReadableString()
         {
             return string.Concat(
                 (!string.IsNullOrEmpty(FullName)) ? string.Concat(FullName, ", ") : string.Empty,

@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Concepts.Ring3.Content" Collapsed="true">
+    <Position X="3.25" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImmaterialContent\Content.cs</FileName>
+      <HashCode>AIAAQAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring3.ContentBearingObject" Collapsed="true">
+    <Position X="0.75" Y="3" Width="1.75" />
+    <TypeIdentifier>
+      <FileName>ImmaterialContent\ContentBearingObject.cs</FileName>
+      <HashCode>AAIAAAABCAAAAAAAKAAAAAAAAAAAAAAAABAAQAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring3.ContentAssetRole" Collapsed="true">
+    <Position X="5.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImmaterialContent\ContentAsset.cs</FileName>
+      <HashCode>AAAAAAAAEgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Something" Collapsed="true">
+    <Position X="3.25" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring3.Creation">
+    <Position X="3.25" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>ImmaterialContent\Creation.cs</FileName>
+      <HashCode>AAgAAAAAAAAAAEAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring3.Creation.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>ImmaterialContent\Creation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring1.Role" Collapsed="true">
+    <Position X="5.75" Y="3" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Relation" Collapsed="true">
+    <Position X="6" Y="4.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+</ClassDiagram>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Comment CommentText="Basic role &amp; somebody model&#xD;&#xA;&#xD;&#xA;Copyright © SocietyObjects Ltd 2003, 2004, 2005">
+    <Position X="0.5" Y="0.5" Height="0.739" Width="3.085" />
+  </Comment>
+  <Class Name="Concepts.Ring2.PersonRole" Collapsed="true">
+    <Position X="8.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.SomebodiesRelationWithAddress">
+    <Position X="6" Y="6.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Addressing\SomebodiesRelationWithAddress.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.SomebodiesRelationWithAddress.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Addressing\SomebodiesRelationWithAddress.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring2.PreDefinedInvoiceToRole" Collapsed="true">
+    <Position X="5" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\PreDefinedInvoiceToRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.PreDefinedDeliverToRole" Collapsed="true">
+    <Position X="7.25" Y="9.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\PreDefinedDeliverToRole.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Concepts.Ring2.SomebodiesRelationWithAddress" FixedToPoint="true">
+      <Path>
+        <Point X="7.125" Y="8.069" />
+        <Point X="7.125" Y="8.875" />
+        <Point X="8.25" Y="8.875" />
+        <Point X="8.25" Y="9.25" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Concepts.Ring1.Something" Collapsed="true">
+    <Position X="11" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.Customer">
+    <Position X="12.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Commerce\Customer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AffiliatedPersons" />
+    </ShowAsAssociation>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.Customer.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Commerce\Customer.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring2.Supplier" Collapsed="true">
+    <Position X="10.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Commerce\Supplier.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.BuyerContactParticipant" Collapsed="true">
+    <Position X="20.25" Y="11.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\BuyerContactParticipant.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.BuyerApprovedByParticipant" Collapsed="true">
+    <Position X="20.25" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\BuyerApprovedByParticipant.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.SellerApprovedByParticipant" Collapsed="true">
+    <Position X="16.5" Y="10.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\SellerApprovedByParticipant.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.SellerContactParticipant" Collapsed="true">
+    <Position X="16.5" Y="11.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\SellerContactParticipant.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Organisation" Collapsed="true">
+    <Position X="1" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Work\Organisation.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+    <InheritanceLine Type="Concepts.Ring1.LegalEntity" FixedToPoint="true">
+      <Path>
+        <Point X="1.75" Y="4.13" />
+        <Point X="1.75" Y="5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Concepts.Ring2.Company" Collapsed="true">
+    <Position X="1" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Work\Company.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.LegalEntity" Collapsed="true">
+    <Position X="1" Y="3.5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Somebody">
+    <Position X="3.5" Y="2.25" Width="1.5" />
+    <TypeIdentifier />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Somebody.Kind" Collapsed="true">
+        <TypeIdentifier />
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring1.SomebodiesRelation" Collapsed="true">
+    <Position X="7.5" Y="5" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Role" Collapsed="true">
+    <Position X="7.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.Seller" Collapsed="true">
+    <Position X="17.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\Seller.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.Buyer" Collapsed="true">
+    <Position X="19.75" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\TradeParticipants\Buyer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.ParticipantingThing" Collapsed="true">
+    <Position X="21" Y="6.25" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring1.Relation" Collapsed="true">
+    <Position X="7.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.Consumer" Collapsed="true">
+    <Position X="12.75" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>Commerce\Consumer.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Participant" Collapsed="true">
+    <Position X="18.5" Y="7.75" Width="2" />
+    <TypeIdentifier />
+  </Class>
+  <Interface Name="System.Collections.Generic.ICollection&lt;T&gt;" Collapsed="true">
+    <Position X="15.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+</ClassDiagram>

@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="Concepts.Ring2.Sale">
+    <Position X="3.25" Y="4" Width="2" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\Sale.cs</FileName>
+      <HashCode>AACAAAAAAAIACABIBAASIBAAAAAAQAAgABABQAhACAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.Sale.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Commerce\TradeEvents\Sale.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <InheritanceLine Type="Concepts.Ring1.Event" FixedFromPoint="true">
+      <Path>
+        <Point X="4.25" Y="3.38" />
+        <Point X="4.25" Y="4" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Concepts.Ring2.SaleItem">
+    <Position X="6.75" Y="4" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\SaleItem.cs</FileName>
+      <HashCode>AAAgAEEAAAAAAAIAIAAC4BAAIAIAQAAAQBAAQAhAAAA=</HashCode>
+    </TypeIdentifier>
+    <NestedTypes>
+      <Class Name="Concepts.Ring2.SaleItem.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Commerce\TradeEvents\SaleItem.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+  </Class>
+  <Class Name="Concepts.Ring1.Event" Collapsed="true">
+    <Position X="3.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier />
+    <InheritanceLine Type="Concepts.Ring1.Something" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.25" Y="1.63" />
+        <Point X="4.25" Y="2.75" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Concepts.Ring1.Something" Collapsed="true">
+    <Position X="3.5" Y="1" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.ParticipatingVendible" Collapsed="true">
+    <Position X="6.75" Y="2.75" Width="2.25" />
+    <TypeIdentifier>
+      <FileName>Commerce\TradeEvents\ParticipatingVendible.cs</FileName>
+      <HashCode>AAAAAIAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.ParticipantingThing" Collapsed="true">
+    <Position X="6.75" Y="1.5" Width="2.25" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="Concepts.Ring2.SalesItem">
+    <Position X="13" Y="6.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>SalesItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring2.TradeItem">
+    <Position X="13" Y="3.25" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>TradeItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+</ClassDiagram>

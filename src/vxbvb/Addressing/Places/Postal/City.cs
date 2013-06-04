@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+using Starcounter;
+using Concepts.Ring1;
+
+
+namespace Concepts.Ring2
+{
+    /// <summary>
+    /// Part of the postal address system.
+    /// </summary>
+    /// <ontlogy>
+    /// <equal>wordnet:X</equal>
+    /// <equal>sumo:X</equal>
+    /// </ontlogy>
+    public class City : PostAddressComponent
+    {
+		#region Kind class
+		/// <summary>
+		/// Specific City
+		/// </summary>
+        /// <seealso cref="SpatialAddress.Kind"/>
+        public new class Kind : PostAddressComponent.Kind 
+        {
+        }
+		#endregion
+
+
+        /// <summary>
+        /// Name of the city.
+        /// </summary>
+        [SynonymousTo("Name")]
+        public string CityName;
+	}
+}

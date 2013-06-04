@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Concepts.Ring1.Category">
+    <Position X="2" Y="4.25" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Category.Kind">
+        <TypeIdentifier>
+          <NewMemberFileName>Category.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Categories\Category.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.CategoryLevel">
+    <Position X="6" Y="3.75" Width="2" />
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.CategoryLevel.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>CategoryLevel.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Categories\CategoryLevel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Concepts.Ring1.Level" HideInheritanceLine="true">
+    <Position X="6" Y="0.75" Width="2" />
+    <Members>
+      <Method Name="AddHigherLevel" Hidden="true" />
+      <Property Name="HighestLevel" Hidden="true" />
+      <Method Name="IsLowerOrEqualThan" Hidden="true" />
+      <Property Name="LowestLevel" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Level.Kind" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Level.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <AssociationLine Name="HigherLevel" Type="Concepts.Ring1.Level" ManuallyRouted="true">
+      <Path>
+        <Point X="6.704" Y="0.75" />
+        <Point X="6.704" Y="0.271" />
+        <Point X="7.31" Y="0.271" />
+        <Point X="7.31" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.131" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <AssociationLine Name="LowerLevel" Type="Concepts.Ring1.Level" ManuallyRouted="true">
+      <Path>
+        <Point X="6" Y="1.119" />
+        <Point X="5.542" Y="1.119" />
+        <Point X="5.542" Y="1.429" />
+        <Point X="6" Y="1.429" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.173" Y="0.143" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAIAAAAAAEAAAAAAAgAAAAAAAACAAAACAAAAAAAA=</HashCode>
+      <FileName>Level.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="HigherLevel" />
+      <Field Name="LowerLevel" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Concepts.Ring1.Something">
+    <Position X="2" Y="0.75" Width="1.75" />
+    <Members>
+      <Field Name="_IsQuantified" Hidden="true" />
+      <Field Name="_Materialized" Hidden="true" />
+      <Field Name="_QuantificationQuantity" Hidden="true" />
+      <Method Name="As" Hidden="true" />
+      <Property Name="ClassName" Hidden="true" />
+      <Method Name="Clone" Hidden="true" />
+      <Field Name="Definition" Hidden="true" />
+      <Field Name="Description" Hidden="true" />
+      <Property Name="FullClassName" Hidden="true" />
+      <Method Name="GetUnit" Hidden="true" />
+      <Method Name="ImplicitlyAs" Hidden="true" />
+      <Method Name="ImplicitlyRelatedToObjects" Hidden="true" />
+      <Method Name="ImplicitRelationsTo" Hidden="true" />
+      <Method Name="ImplicitRelationTo" Hidden="true" />
+      <Method Name="ImplicitRole" Hidden="true" />
+      <Method Name="ImplicitRoles" Hidden="true" />
+      <Method Name="ImplicitRolesSum" Hidden="true" />
+      <Property Name="InstantiatedFrom" Hidden="true" />
+      <Method Name="Is" Hidden="true" />
+      <Method Name="IsImplicitly" Hidden="true" />
+      <Method Name="IsImplicitlyRelatedTo" Hidden="true" />
+      <Property Name="IsNew" Hidden="true" />
+      <Field Name="IsQuantified" Hidden="true" />
+      <Method Name="IsRelatedTo" Hidden="true" />
+      <Field Name="Materialized" Hidden="true" />
+      <Field Name="Name" Hidden="true" />
+      <Property Name="ObjectID" Hidden="true" />
+      <Property Name="ObjectIDString" Hidden="true" />
+      <Field Name="QuantificationQuantity" Hidden="true" />
+      <Method Name="Refresh" Hidden="true" />
+      <Method Name="RelatedToObjects" Hidden="true" />
+      <Method Name="RelationsTo" Hidden="true" />
+      <Method Name="RelationsToSum" Hidden="true" />
+      <Method Name="RelationTo" Hidden="true" />
+      <Method Name="Role" Hidden="true" />
+      <Method Name="Roles" Hidden="true" />
+      <Method Name="RolesSum" Hidden="true" />
+      <Property Name="SelectorString" Hidden="true" />
+      <Method Name="SetQuantificationQuantity" Hidden="true" />
+      <Method Name="Something" Hidden="true" />
+      <Method Name="ToReadableString" Hidden="true" />
+      <Method Name="ToSelectorString" Hidden="true" />
+      <Property Name="UniqueQuantity" Hidden="true" />
+      <Method Name="Was" Hidden="true" />
+      <Method Name="WasImplicitly" Hidden="true" />
+      <Method Name="WasImplicitlyRelatedTo" Hidden="true" />
+      <Method Name="WasRelatedTo" Hidden="true" />
+    </Members>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Class Name="Concepts.Ring1.Something.Kind">
+        <Members>
+          <Method Name="AssureByName" Hidden="true" />
+          <Method Name="AssureKindByName" Hidden="true" />
+          <Property Name="ClassName" Hidden="true" />
+          <Method Name="Derive" Hidden="true" />
+          <Property Name="DerivedFrom" Hidden="true" />
+          <Property Name="DerivedKinds" Hidden="true" />
+          <Property Name="DescriptiveKindName" Hidden="true" />
+          <Method Name="Find" Hidden="true" />
+          <Method Name="FindAll" Hidden="true" />
+          <Method Name="FindMany" Hidden="true" />
+          <Property Name="FullClassName" Hidden="true" />
+          <Property Name="FullInstanceClassName" Hidden="true" />
+          <Method Name="GetAll" Hidden="true" />
+          <Method Name="GetByName" Hidden="true" />
+          <Method Name="GetInstance" Hidden="true" />
+          <Method Name="GetKindByName" Hidden="true" />
+          <Property Name="InstanceClassName" Hidden="true" />
+          <Property Name="Instantiates" Hidden="true" />
+          <Method Name="IsDerivedFrom" Hidden="true" />
+          <Method Name="Kind" Hidden="true" />
+          <Method Name="New" Hidden="true" />
+          <Method Name="Of" Hidden="true" />
+          <Method Name="ToReadableString" Hidden="true" />
+          <Method Name="ToSelectorString" Hidden="true" />
+        </Members>
+        <TypeIdentifier>
+          <NewMemberFileName>Something.cs</NewMemberFileName>
+        </TypeIdentifier>
+        <Lollipop Position="0.2" />
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>YARCASAFwAPgCIUAUAACAAQBAyBQQQEIAEgwAIAMABg=</HashCode>
+      <FileName>Something.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

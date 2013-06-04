@@ -70,7 +70,8 @@ namespace Concepts.Ring1
     /// <ontology>
     /// <equal>sumo:Entity</equal>
     /// </ontology>
-    public class Something : Entity
+    [Database]
+    public class Something 
     {
         
         protected Something()
@@ -78,6 +79,18 @@ namespace Concepts.Ring1
         {
         }
 
+        protected virtual void OnDelete()
+        {
+        }
+
+        protected virtual void OnNew()
+        {
+        }
+
+        public virtual string ToReadableString()
+        {
+            return "";
+        }
 
         /// <summary>
         /// Each object may have a name or a title containing a single line of text.
@@ -121,7 +134,7 @@ namespace Concepts.Ring1
         {
             get
             {
-                return DbHelper.GetObjectID(this);
+                return DbHelper.GetObjectNo(this);
             }
         }
 
@@ -130,7 +143,7 @@ namespace Concepts.Ring1
         {
             get
             {
-                return DbHelper.GetObjectID(this).ToString();
+                return DbHelper.GetObjectID(this);
             }
         }
 

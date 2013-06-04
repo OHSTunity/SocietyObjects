@@ -3,6 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring1", "Concepts.Ring1\Concepts.Ring1.csproj", "{CBB52392-C024-42EC-B358-F8287EA9FF2E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring2", "Concepts.Ring2\Concepts.Ring2.csproj", "{8F011ABB-1A67-4287-891B-BA1F29D3B044}"
+	ProjectSection(ProjectDependencies) = postProject
+		{CBB52392-C024-42EC-B358-F8287EA9FF2E} = {CBB52392-C024-42EC-B358-F8287EA9FF2E}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring3", "Concepts.Ring3\Concepts.Ring3.csproj", "{6EFE6EBF-0B3D-40C7-A5B1-56A433A14784}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring4", "Concepts.Ring4\Concepts.Ring4.csproj", "{B98738EC-CB60-40C6-A378-8F128898BB37}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +22,18 @@ Global
 		{CBB52392-C024-42EC-B358-F8287EA9FF2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CBB52392-C024-42EC-B358-F8287EA9FF2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CBB52392-C024-42EC-B358-F8287EA9FF2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F011ABB-1A67-4287-891B-BA1F29D3B044}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F011ABB-1A67-4287-891B-BA1F29D3B044}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F011ABB-1A67-4287-891B-BA1F29D3B044}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F011ABB-1A67-4287-891B-BA1F29D3B044}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EFE6EBF-0B3D-40C7-A5B1-56A433A14784}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EFE6EBF-0B3D-40C7-A5B1-56A433A14784}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EFE6EBF-0B3D-40C7-A5B1-56A433A14784}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EFE6EBF-0B3D-40C7-A5B1-56A433A14784}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B98738EC-CB60-40C6-A378-8F128898BB37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B98738EC-CB60-40C6-A378-8F128898BB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B98738EC-CB60-40C6-A378-8F128898BB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B98738EC-CB60-40C6-A378-8F128898BB37}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

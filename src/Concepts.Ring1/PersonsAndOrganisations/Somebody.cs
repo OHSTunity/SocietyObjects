@@ -278,7 +278,7 @@ namespace Concepts.Ring1
             return string.Concat(
                 (!string.IsNullOrEmpty(FullName)) ? string.Concat(FullName, ", ") : string.Empty,
                 FullClassName,
-                ", [", ObjectIDString, "]"); 
+                ", [", ObjectID.ToString(), "]"); 
         }
 
         /// <summary>

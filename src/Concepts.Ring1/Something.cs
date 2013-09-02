@@ -138,14 +138,6 @@ namespace Concepts.Ring1
             }
         }
 
-        [DebuggerHidden]
-        public string ObjectIDString
-        {
-            get
-            {
-                return DbHelper.GetObjectID(this);
-            }
-        }
 
         /// <summary>
         /// When this object is displayed in a selector (e.g.) a list box

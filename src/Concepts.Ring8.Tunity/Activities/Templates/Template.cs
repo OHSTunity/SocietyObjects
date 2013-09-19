@@ -25,7 +25,8 @@ namespace Concepts.Ring8.Tunity
         /// <summary>
         /// The lenght/duration of the event
         /// </summary>
-        public TimeSpan DefaultDuration;
+        //TimeSpan
+        //public TimeSpan DefaultDuration;
 
         /// <summary>
         /// If the template should be visisble in the gantt or not
@@ -56,7 +57,7 @@ namespace Concepts.Ring8.Tunity
         public Template Parent;
 
         //Timespan offset to parent
-        public TimeSpan ParentOffset;
+        //public TimeSpan ParentOffset;
         public Boolean NegativeParentOffset; //True if ParentOffset is a negative offset, no support id db for negative timespan
 
         public IEnumerable<Template> Children

@@ -28,7 +28,7 @@ namespace Concepts.Ring8.Tunity.Attributes
         /// Holds the display name of this time, is translated per user and therefore
         /// not stored.
         /// </summary>
-        [NotPersistent]
+        [Transient]
         public String DisplayName;
 
         public int CompareTo(object obj)

@@ -20,6 +20,8 @@ namespace Concepts.Ring8.Tunity
     /// <summary>
     /// 
     /// </summary>
+    ///  
+    [Database]
     public class Production : Something, IObjectState
     {
       

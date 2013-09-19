@@ -4,7 +4,7 @@ using Concepts.Ring1;
 using Starcounter;
 
 
-namespace Concepts.Ring3.SystemX
+namespace Concepts.Ring3
 {
     /// <summary>
     /// 

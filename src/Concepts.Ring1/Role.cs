@@ -10,7 +10,6 @@
 
 
 using System;
-using Starcounter;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -67,8 +66,8 @@ namespace Concepts.Ring1
         /// <summary>
         /// 
         /// </summary>
-        [SynonymousTo("Value")]
-		public readonly Something WhatIs;
+      //  [SynonymousTo("Value")]
+		public Something WhatIs;
 
         /// <summary>
         /// Initiate WhatIs property.
@@ -76,7 +75,7 @@ namespace Concepts.Ring1
         /// <param name="whatIs"></param>
         public void SetWhatIs(Something whatIs)
         {
-            SetValue(whatIs);
+            WhatIs = whatIs;
         }
 
         /// <summary>

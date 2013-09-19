@@ -21,9 +21,9 @@ namespace Concepts.Ring1
         /// <summary>
         /// Returns a unique ID for this object.
         /// </summary>
-        ulong ObjectID
+      /*  string ObjectID
         {
             get;
-        }
+        }*/
     }
 }

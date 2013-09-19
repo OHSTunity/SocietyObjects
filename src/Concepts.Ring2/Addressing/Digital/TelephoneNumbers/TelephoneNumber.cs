@@ -8,6 +8,7 @@ namespace Concepts.Ring2
     /// </summary>
 	public class TelephoneNumber : Address
 	{
+        public Country Country;
 
         [SynonymousTo("AddressID")]
         public String Number;

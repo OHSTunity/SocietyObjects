@@ -40,76 +40,32 @@ namespace Concepts.Ring1
         /// The object addressed by the Address
         /// </summary>
         [SynonymousTo("ToWhat")]
-        public readonly Something Addressee;
-        public void SetAddressee(Something addressee)
-        {
-            SetToWhat(addressee);
-        }
-
+        public Something Addressee;
+       
 
 
         /// <summary>
         /// The Address addressing the Addressee
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly Address Address;
-        public void SetAddress(Address address)
-        {
-            SetWhatIs(address);
-        }
-
-        /// <summary>
-        /// Setting of "WhatIs" property of this relation.
-        /// </summary>
-        /// <param name="address"></param>
-        public override void SetValue(Something address)
-        {
-            if (address == null)
-            {
-                throw new ArgumentNullException("Address can not be null. A addressrelation must point to an Address");
-            }
-            base.SetValue(address);
-        }
-
-        /// <summary>
-        /// Setting of "ToWhat" property of this relation.
-        /// </summary>
-        /// <param name="addressee"></param>
-        public override void SetToWhat(Something addressee)
-        {
-            if (addressee == null)
-            {
-                throw new ArgumentNullException("Addressee can not be null. A addressrelation must point to an Addressee");
-            }
-            base.SetToWhat(addressee);
-        }
+        public Address Address;
+       
+        
 
 
-
-        private bool _isDefault;
         /// <summary>
         /// If this address relation is the default relation.
         /// </summary>
-        [SynonymousTo("_isDefault")]
-        public readonly bool IsDefault;
+        public bool IsDefault;
 
         public void SetAsDefault()
         {
-            if (!_isDefault) //Ugly to avoid fatal warning
-                _isDefault = true;
-           /*TODO
-            * AddressRelation.Kind currentRelationKind = (AddressRelation.Kind)InstantiatedFrom;
-
-            foreach (AddressRelation relation in ToWhat.ImplicitRoles<AddressRelation>(currentRelationKind))
-            {
-                relation._isDefault = relation.Equals(this);
-            }
-            */
+            IsDefault = true;
         }
 
         public void UnsetAsDefault()
         {
-            _isDefault = false;
+            IsDefault = false;
         }
     }
 }

@@ -14,7 +14,7 @@ using Starcounter;
 using Concepts.Ring1;
 
 
-namespace Concepts.Ring3.SystemX
+namespace Concepts.Ring3
 {
     public class SystemUserGroup : Something, IConfigurationParameterOwner
     {

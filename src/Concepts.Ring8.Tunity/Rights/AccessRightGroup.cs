@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Starcounter;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 
 
 namespace Concepts.Ring8.Tunity
@@ -11,6 +11,10 @@ namespace Concepts.Ring8.Tunity
     public class AccessRightGroup : Something
     {
 
+        public static AccessRightGroup Get(SystemUser user)
+        {
+            return Db.SQL<AccessRightGroup>("SELECT a FROM AccessRightGroup a JOIN AccessRightGroupMember b ON b.ToWhat=a WHERE b.WhatIs=?", user).First;
+        }
         /// <summary>
         /// The rights connected to this group
         /// </summary>

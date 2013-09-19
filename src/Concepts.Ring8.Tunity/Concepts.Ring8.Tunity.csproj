@@ -40,17 +40,17 @@
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Starcounter">
-      <HintPath>$(StarcounterBin)\Starcounter.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Starcounter, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\Level1\bin\Debug\Starcounter.dll</HintPath>
     </Reference>
     <Reference Include="Starcounter.XSON">
       <HintPath>$(StarcounterBin)\Starcounter.XSON.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="Starcounter.Internal">
-      <HintPath>$(StarcounterBin)\Starcounter.Internal.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Starcounter.Internal, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\level1\bin\Debug\Starcounter.Internal.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

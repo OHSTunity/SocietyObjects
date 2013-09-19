@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Starcounter;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 
 
 
@@ -136,7 +136,7 @@ namespace Concepts.Ring8.Tunity
             {
                 if (_doc != null)
                 {
-                    return "doc|"+_doc.ObjectID.ToString();
+                    return "doc|"+DbHelper.GetObjectID(_doc);
                 }
                 return "";
             }

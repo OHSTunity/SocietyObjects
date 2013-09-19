@@ -21,37 +21,17 @@ namespace Concepts.Ring1
     /// </summary>
     public abstract class Attribute : Something
     {
-        private Something _owner;
-
         /// <summary>
         /// Type references this attribute, owner of this attribute.
         /// </summary>
-        [SynonymousTo("_owner")]
-        public readonly Something Owner;
+        public Something Owner;
         
-        /// <summary>
-        /// Set the owner of this attribute
-        /// </summary>
-        public virtual void SetOwner(Something owner)
-        {
-            _owner = owner;
-        }
-
-        private Something _value;
-
+        
         /// <summary>
         /// Value of this attribute.
         /// </summary>
-        [SynonymousTo("_value")]
-        public readonly Something Value;
+        public Something Value;
 
-        /// <summary>
-        /// Set the value of this attribute.
-        /// </summary>
-        public virtual void SetValue(Something value)
-        {
-            _value = value;
-        }
-
+       
     }
 }

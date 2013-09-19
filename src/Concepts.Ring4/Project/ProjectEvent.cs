@@ -10,6 +10,7 @@ namespace Concepts.Ring4
     /// <summary>
     /// 
     /// </summary>
+    [Database]
     public class ProjectEvent : Event
     {
         

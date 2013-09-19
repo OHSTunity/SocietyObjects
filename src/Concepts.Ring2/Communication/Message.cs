@@ -10,6 +10,7 @@ using Concepts.Ring1;
 
 namespace Concepts.Ring2
 {
+    [Database]
     public class Message : Event
     {
        

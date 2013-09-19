@@ -24,7 +24,7 @@ namespace Concepts.Ring8.Tunity
       
         public ActivityLabel()
         {
-            Name = "Label" + this.ObjectID.ToString();
+            Name = "Label" + DbHelper.GetObjectID(this);
             Color = 0xAAAAAA;
         }
 

@@ -1,5 +1,5 @@
 #region Using directives
-
+using Starcounter;
 using System;
 using System.Collections.Generic;
 using Concepts.Ring1;
@@ -8,6 +8,7 @@ using Concepts.Ring2;
 
 namespace Concepts.Ring3
 {
+    [Database]
     public class DigitalSource : Something
     {
        

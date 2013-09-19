@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Starcounter;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 using Concepts.Ring2;
 
 
@@ -13,8 +13,8 @@ namespace Concepts.Ring8.Tunity
     {
         public NotificationRecipient(Notification notification, Something recipient)
         {
-            SetParticipant(recipient);
-            SetToWhat(notification);
+            Participant = recipient;
+            ToWhat = notification;
             Rd_SendTime = notification.BeginTime;
         }
 

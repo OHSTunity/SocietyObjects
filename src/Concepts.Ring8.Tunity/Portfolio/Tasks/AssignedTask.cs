@@ -52,9 +52,9 @@ namespace Concepts.Ring8.Tunity
         /// <summary>
         /// Planned time for this task
         /// </summary>
-        public TimeSpan PlannedTime;
+        //public TimeSpan PlannedTime;
 
-        public TimeSpan UsedTime
+       /* public TimeSpan UsedTime
         {
             get
             {
@@ -66,7 +66,7 @@ namespace Concepts.Ring8.Tunity
                 return span;
             }
         }
-
+        */
 
         /// <summary>
         /// Sheets bounded to this task

@@ -51,7 +51,7 @@ namespace Concepts.Ring1
 
         public override string ToString()
         {
-            return string.Format("[{0}], {1}, Occurance={2}", ObjectID, Lemma, OccurenceCount);
+            return "";// string.Format("[{0}], {1}, Occurance={2}", ObjectID, Lemma, OccurenceCount);
         }
 
         public override string ToSelectorString()

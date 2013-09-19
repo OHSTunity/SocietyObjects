@@ -10,7 +10,7 @@
 using System.Collections.Generic;
 using Concepts.Ring1;
 
-namespace Concepts.Ring3.SystemX
+namespace Concepts.Ring3
 {
     /// <summary>
     /// Interface that must be implemented by any Persistent object that wants to

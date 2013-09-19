@@ -5,7 +5,7 @@ using Concepts.Ring1;
 using Concepts.Ring1.SystemX;
 
 
-namespace Concepts.Ring3.SystemX
+namespace Concepts.Ring3
 {
     /// <summary>
     /// The role as user to a system domain.
@@ -35,12 +35,8 @@ namespace Concepts.Ring3.SystemX
         /// Same as WhatIs (synonym).
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly Somebody WhoIs;
-        public void SetWhoIs(Somebody whoIs)
-        {
-            SetWhatIs(whoIs);
-        }
-
+        public Somebody WhoIs;
+        
         /*TODO:
         /// <summary>
         /// The computer system where the user has logged in.
@@ -159,7 +155,7 @@ namespace Concepts.Ring3.SystemX
             SystemUser newSystemUser = new SystemUser();
             newSystemUser.Password = this.Password;
             newSystemUser.Username = this.Username;
-            newSystemUser.SetWhoIs(this.WhoIs);
+            newSystemUser.WhoIs = this.WhoIs;
 //            newSystemUser.Configuration = this.Configuration;
             return newSystemUser;
         }

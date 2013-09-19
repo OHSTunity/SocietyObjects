@@ -35,9 +35,9 @@ namespace Concepts.Ring1
         public Placement() { }
         public Placement(decimal referedQuantity, Something placedObject, Address where)
         {
-            SetReferedQuantity(referedQuantity);
-            SetAddress(where);
-            SetPlacedObject(placedObject);
+            ReferedQuantity = referedQuantity;
+            Address = where;
+            PlacedObject = placedObject;
         }
         /*public new class Kind : AddressRelation.Kind
         {
@@ -141,35 +141,12 @@ namespace Concepts.Ring1
 
         public Something PlacedKind;
 
-        public override void SetQuantity(decimal quantity)
-        {
-            base.SetQuantity(quantity);
-        }
-
         [SynonymousTo("Quantity")]
-        public readonly decimal ReferedQuantity;
-        public void SetReferedQuantity(decimal referedQuantity)
-        {
-            SetQuantity(referedQuantity);
-        }
-
+        public decimal ReferedQuantity;
+        
         [SynonymousTo("ToWhat")]
-        public readonly Something PlacedObject;
-        public void SetPlacedObject(Something placedObject)
-        {
-            SetAddressee(placedObject);
-        }
-
-        public override void SetToWhat(Something placedObject)
-        {
-
-            base.SetToWhat(placedObject);
-        }
-
-        public override void SetValue(Something address)
-        {
-            base.SetValue(address);
-        }
+        public Something PlacedObject;
+        
 
 
         public PlacementPackageToBeMovedToExtension PlacementPackageToBeMovedToExtension;

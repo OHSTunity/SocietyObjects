@@ -42,7 +42,7 @@ namespace Concepts.Ring8.Tunity
             {
                 if (String.IsNullOrEmpty(_folderName))
                 {
-                    return ObjectID.ToString() + "\\";
+                    return DbHelper.GetObjectID(this) + "\\";
                 }
                 else
                     return _folderName;
@@ -293,7 +293,7 @@ namespace Concepts.Ring8.Tunity
             }
             set
             {
-                base.EndTime = value.Date.AddDays(1).Subtract(new TimeSpan(0,0,1));
+                //base.EndTime = value.Date.AddDays(1).Subtract(new TimeSpan(0,0,1));
             }
         }
 

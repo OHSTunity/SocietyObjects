@@ -107,16 +107,9 @@ namespace Concepts.Ring1
         /// An instance of something can be quantified.
         /// TODO, better explanation.
         /// </summary>
-        private decimal _quantity;
+        public decimal Quantity;
 
-        [SynonymousTo("_quantity")]
-        public readonly decimal Quantity;
-
-        public virtual void SetQuantity(decimal quantity)
-        {
-            _quantity = quantity;
-        }
-
+      
         /// <summary>
         /// Create a copy of this object
         /// </summary>
@@ -129,15 +122,16 @@ namespace Concepts.Ring1
         }
 
        
-        [DebuggerHidden]
-        public ulong ObjectID
+       /* [DebuggerHidden]
+        public string ObjectID
         {
             get
             {
-                return DbHelper.GetObjectNo(this);
+                return DbHelper.GetObjectID(this);
             }
-        }
+        }*/
 
+       
 
         /// <summary>
         /// When this object is displayed in a selector (e.g.) a list box
@@ -151,7 +145,7 @@ namespace Concepts.Ring1
 
             if (string.IsNullOrEmpty(name))
             {
-                name = string.Format("{0}: {1}", GetType().Name, ObjectID);
+                name = string.Format("{0}: {1}", GetType().Name, DbHelper.GetObjectID(this));
             }
 
             return Name;

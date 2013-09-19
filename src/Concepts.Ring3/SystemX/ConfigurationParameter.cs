@@ -15,7 +15,7 @@ using Starcounter;
 
 
 
-namespace Concepts.Ring3.SystemX
+namespace Concepts.Ring3
 {
     /// <summary>
     /// Instances of this class represents single things that can be

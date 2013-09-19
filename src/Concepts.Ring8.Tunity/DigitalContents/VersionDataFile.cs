@@ -10,7 +10,6 @@
 using System;
 using Concepts.Ring1;
 using Concepts.Ring3;
-using Concepts.Ring3.SystemX;
 
 namespace Concepts.Ring8.Tunity
 {

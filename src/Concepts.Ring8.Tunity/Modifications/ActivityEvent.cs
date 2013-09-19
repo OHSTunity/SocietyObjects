@@ -23,7 +23,7 @@ namespace Concepts.Ring8.Tunity
     /// </summary>
     public class ActivityEvent: Event, IModificationTarget
     {
-        private static TimeSpan TIME_LIMIT = TimeSpan.FromMinutes(20);
+        //private static TimeSpan TIME_LIMIT = TimeSpan.FromMinutes(20);
 
 /*        public ActivityEvent(TunityActivity activity)
         {
@@ -55,11 +55,11 @@ namespace Concepts.Ring8.Tunity
             }
 
             //Must be within a certain time limit
-            if (mod.Time > EndTime.Add(TIME_LIMIT))
+           /* if (mod.Time > EndTime.Add(TIME_LIMIT))
             {
                 return false;
             }
-
+            */
             return true;
         }
 

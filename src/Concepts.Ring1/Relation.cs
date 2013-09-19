@@ -95,7 +95,7 @@ namespace Concepts.Ring1
         private Something _toWhat;
 
         [SynonymousTo("_toWhat")]
-        public readonly Something ToWhat;
+        public Something ToWhat;
 
         public virtual void SetToWhat(Something toWhat)
         {

@@ -1,9 +1,0 @@
-﻿<?xml version='1.0' encoding='utf-8'?>
-<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ConsoleApplication1.Properties" GeneratedClassName="Settings">
-  <Profiles />
-  <Settings>
-    <Setting Name="ConsoleApplication1_com_proofhq_www_soapService" Type="(Web Service URL)" Scope="Application">
-      <Value Profile="(Default)">https://www.proofhq.com/12_7_0/soap.php</Value>
-    </Setting>
-  </Settings>
-</SettingsFile>

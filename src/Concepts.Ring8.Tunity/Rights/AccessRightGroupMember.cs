@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Starcounter;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 
 namespace Concepts.Ring8.Tunity
 {
@@ -14,22 +14,14 @@ namespace Concepts.Ring8.Tunity
         /// The system user that is an indirect member of the group.
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly SystemUser SystemUser;
-        public void SetSystemUser(SystemUser systemUser)
-        {
-            SetWhatIs(systemUser);
-        }
-
+        public SystemUser SystemUser;
+       
         /// <summary>
         /// 
         /// </summary>
         [SynonymousTo("ToWhat")]
-        public readonly AccessRightGroup AccessRightGroup;
-        public void SetRightsGroup(AccessRightGroup group)
-        {
-            SetToWhat(group);
-        }
-
+        public AccessRightGroup AccessRightGroup;
+        
     }
 }
 

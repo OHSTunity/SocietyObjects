@@ -34,24 +34,12 @@ namespace Concepts.Ring1
     {
         
         [SynonymousTo("ParticipatesIn")]
-        public readonly Transfer Transfer;
-        public void SetTransfer(Event transfer)
-        {
-            SetParticipatesIn(transfer);
-        }
+        public Transfer Transfer;
+        
 
         [SynonymousTo("WhatIs")]
-        public readonly Something TransferedThing;
-        public void SetTransferedThing(Something transferedThing)
-        {
-            SetWhatIs(transferedThing);
-        }
-
-        public override void SetValue(Something value)
-        {
-            base.SetValue(value);
-        }
-
+        public Something TransferedThing;
+        
         public DateTime ExecutedTime;
         public bool IsExecuted
         {
@@ -60,12 +48,7 @@ namespace Concepts.Ring1
         
         
         [SynonymousTo("Quantity")]
-        public readonly decimal ReferedQuantity;
-
-        public void SetReferedQuantity(decimal referedQuantity)
-        {
-            SetQuantity(referedQuantity);
-        }
+        public decimal ReferedQuantity;
 
 
         /// <summary>
@@ -121,10 +104,10 @@ namespace Concepts.Ring1
             decimal quantity, 
             Participant agent)
         {
-            SetTransferedThing(objectToTransfer);
-            SetFrom(from);
-            SetTo(to);
-            SetReferedQuantity(quantity);
+            TransferedThing = objectToTransfer;
+            From = from;
+            To = to;
+            ReferedQuantity = quantity;
             Agent = agent;
         }
 
@@ -159,10 +142,10 @@ namespace Concepts.Ring1
             
             ValidateParameters(objectToTransfer, from, to);
 
-            SetTransferedThing(objectToTransfer);
-            SetFrom(from);
-            SetTo(to);
-            SetReferedQuantity(quantity);
+            TransferedThing = objectToTransfer;
+            From = from;
+            To = to;
+            ReferedQuantity = quantity;
             Agent = agent;
 
             if (quantity == 0) { return; }
@@ -182,9 +165,9 @@ namespace Concepts.Ring1
                     // Create a new Placement
                     fromPlacement = newQty > 0 ? (Placement)new PositivePlacement() : (Placement)new NegativePlacement();
                     fromPlacement.PlacementPackageToBeMovedToExtension = package;
-                    fromPlacement.SetPlacedObject(objectToTransfer);
-                    fromPlacement.SetAddress(from);
-                    fromPlacement.SetReferedQuantity(newQty);
+                    fromPlacement.PlacedObject = objectToTransfer;
+                    fromPlacement.Address = from;
+                    fromPlacement.ReferedQuantity = newQty;
                 }
             }
             else if (newQty == 0)
@@ -198,18 +181,18 @@ namespace Concepts.Ring1
                     fromPlacement.Delete();
                     fromPlacement = new PositivePlacement();
                     fromPlacement.PlacementPackageToBeMovedToExtension = package;
-                    fromPlacement.SetPlacedObject(objectToTransfer);
-                    fromPlacement.SetAddress(from);
+                    fromPlacement.PlacedObject = objectToTransfer;
+                    fromPlacement.Address = from;
                 }
                 else if (newQty < 0 && fromPlacement is PositivePlacement)
                 {
                     fromPlacement.Delete();
                     fromPlacement = new NegativePlacement();
                     fromPlacement.PlacementPackageToBeMovedToExtension = package;
-                    fromPlacement.SetPlacedObject(objectToTransfer);
-                    fromPlacement.SetAddress(from);
+                    fromPlacement.PlacedObject = objectToTransfer;
+                    fromPlacement.Address = from;
                 }
-                fromPlacement.SetReferedQuantity(newQty);
+                fromPlacement.ReferedQuantity = newQty;
             }
 
             Placement toPlacement = FindPlacement<Placement>(objectToTransfer, to,package);
@@ -223,9 +206,9 @@ namespace Concepts.Ring1
                     // Create a new Placement
                     toPlacement = newQty > 0 ? (Placement)new PositivePlacement() : (Placement)new NegativePlacement();
                     toPlacement.PlacementPackageToBeMovedToExtension = package;
-                    toPlacement.SetPlacedObject(objectToTransfer);
-                    toPlacement.SetAddress(to);
-                    toPlacement.SetReferedQuantity(newQty);
+                    toPlacement.PlacedObject = objectToTransfer;
+                    toPlacement.Address = to;
+                    toPlacement.ReferedQuantity = newQty;
                 }
             }
             else if (newQty == 0)
@@ -240,18 +223,18 @@ namespace Concepts.Ring1
                     toPlacement.Delete();
                     toPlacement = new PositivePlacement();
                     toPlacement.PlacementPackageToBeMovedToExtension = package;
-                    toPlacement.SetPlacedObject(objectToTransfer);
-                    toPlacement.SetAddress(to);
+                    toPlacement.PlacedObject = objectToTransfer;
+                    toPlacement.Address = to;
                 }
                 else if (newQty < 0 && toPlacement is PositivePlacement)
                 {
                     toPlacement.Delete();
                     toPlacement = new NegativePlacement();
                     toPlacement.PlacementPackageToBeMovedToExtension = package;
-                    toPlacement.SetPlacedObject(objectToTransfer);
-                    toPlacement.SetAddress(to);
+                    toPlacement.PlacedObject = objectToTransfer;
+                    toPlacement.Address = to;
                 }
-                toPlacement.SetReferedQuantity(newQty);
+                toPlacement.ReferedQuantity = newQty;
             }
             ExecutedTime = DateTime.Now;
             if (TransferedExecuted != null)
@@ -276,10 +259,10 @@ namespace Concepts.Ring1
             Placement toPlacement;
             ValidateParameters(objectToTransfer, from, to);
 
-            SetTransferedThing(objectToTransfer);
-            SetFrom(from);
-            SetTo(to);
-            SetReferedQuantity(quantity);
+            TransferedThing = objectToTransfer;
+            From = from;
+            To = to;
+            ReferedQuantity = quantity;
             Agent = agent;
             bool isPositiveTransfer = quantity > 0;
 
@@ -289,9 +272,9 @@ namespace Concepts.Ring1
             // Create a new Placement
             fromPlacement = newQty > 0 ? (Placement)new PositivePlacement() : (Placement)new NegativePlacement();
             fromPlacement.PlacementPackageToBeMovedToExtension = package;
-            fromPlacement.SetPlacedObject(objectToTransfer);
-            fromPlacement.SetAddress(from);
-            fromPlacement.SetReferedQuantity(newQty);
+            fromPlacement.PlacedObject = objectToTransfer;
+            fromPlacement.Address = from;
+            fromPlacement.ReferedQuantity = newQty;
 
 
             newQty = quantity;
@@ -299,9 +282,9 @@ namespace Concepts.Ring1
             // Create a new Placement
             toPlacement = newQty > 0 ? (Placement)new PositivePlacement() : (Placement)new NegativePlacement();
             toPlacement.PlacementPackageToBeMovedToExtension = package;
-            toPlacement.SetPlacedObject(objectToTransfer);
-            toPlacement.SetAddress(to);
-            toPlacement.SetReferedQuantity(newQty);
+            toPlacement.PlacedObject = objectToTransfer;
+            toPlacement.Address = to;
+            toPlacement.ReferedQuantity = newQty;
             ExecutedTime = DateTime.Now;
             if (TransferedExecuted != null)
             {

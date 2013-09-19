@@ -120,7 +120,7 @@ namespace Concepts.Ring1
             }
             string parentAddress = partOf == null ? "" : partOf.FullInternalAddressID;
             string currentAddressID = _FullInternalAddressID;
-            string potentiallyNewAddressID = (partOf == null) ? ObjectID.ToString() : ObjectID.ToString();
+            string potentiallyNewAddressID = "";//(partOf == null) ? ObjectID.ToString() : ObjectID.ToString();
            // ObjectIDString : String.Format("{0}_{1}", parentAddress, ObjectIDString);
 
             if (!potentiallyNewAddressID.Equals(currentAddressID))
@@ -132,7 +132,7 @@ namespace Concepts.Ring1
 
         private void UpdateFullInternalAddressID(string parentID)
         {
-            string newID = (parentID == null) ? ObjectID.ToString() : ObjectID.ToString();
+            string newID = (parentID == null) ? "" : "";//ObjectID.ToString() : ObjectID.ToString();
             //ObjectIDString : String.Format("{0}_{1}", parentID, ObjectIDString);
             _FullInternalAddressID = newID;
             /*TODO foreach (Address child in GetChildAddresses<Address>())

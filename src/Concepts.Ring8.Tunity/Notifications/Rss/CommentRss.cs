@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Starcounter;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 
 
 
@@ -190,7 +190,7 @@ namespace Concepts.Ring8.Tunity
             {
                 if (_comment != null)
                 {
-                    return "com|" + _comment.ObjectID.ToString();
+                    return "com|" + DbHelper.GetObjectID(_comment);
                 }
                 return "";
             }

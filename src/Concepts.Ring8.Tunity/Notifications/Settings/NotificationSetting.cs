@@ -5,7 +5,7 @@ using Starcounter;
 
 using System.Reflection;
 using Concepts.Ring1;
-using Concepts.Ring3.SystemX;
+using Concepts.Ring3;
 
 
 namespace Concepts.Ring8.Tunity
@@ -18,7 +18,7 @@ namespace Concepts.Ring8.Tunity
         public NotificationSetting(NotificationType type, Person person)
         {
             Name = Enum.GetName(typeof(NotificationType), type);
-            SetOwner(person);
+            Owner = person;
             Reset();
         }
 

@@ -12,21 +12,12 @@ namespace Concepts.Ring1
         /// Same as the ToWhat attribute (synonym).
         /// </summary>
         [SynonymousTo("ToWhat")]
-        public readonly Event ParticipatesIn;
-        public void SetParticipatesIn(Event participatesIn)
-        {
-            SetToWhat(participatesIn);
-        }
-
+        public Event ParticipatesIn;
+        
         /// <summary>
         /// Same as the WhatIs attribute (synonym).
         /// </summary>
 		[SynonymousTo("WhatIs")]
-		public readonly Something Participant;
-        public void SetParticipant(Something participant)
-        {
-            SetWhatIs(participant);
-        }
-
+		public Something Participant;
     }
 }

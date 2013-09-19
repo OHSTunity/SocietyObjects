@@ -75,13 +75,13 @@ namespace Concepts.Ring8.Tunity
         /// <summary>
         /// The amount of time that is logged.
         /// </summary>
-        public TimeSpan UsedTime;
+        //public TimeSpan UsedTime;
 
         public String UsedTimeString
         {
             get
             {
-                return (UsedTime.Days * 24 + UsedTime.Hours).ToString("00") + ":" + UsedTime.Minutes.ToString("00");
+                return "";// (UsedTime.Days * 24 + UsedTime.Hours).ToString("00") + ":" + UsedTime.Minutes.ToString("00");
             }
         }
 

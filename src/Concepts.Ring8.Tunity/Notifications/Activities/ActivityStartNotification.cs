@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using Concepts.Ring1;
 using Concepts.Ring4;
+using Starcounter;
 
 
 
@@ -50,7 +51,7 @@ namespace Concepts.Ring8.Tunity
             {
                 if (_ev != null)
                 {
-                    return "act|" + _ev.ObjectID.ToString();
+                    return "act|" + DbHelper.GetObjectID(_ev);
                 }
                 return "";
             }

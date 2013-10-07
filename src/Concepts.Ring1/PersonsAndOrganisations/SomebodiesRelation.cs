@@ -80,22 +80,14 @@ namespace Concepts.Ring1
         /// Same as WhatIs (synonym).
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly Somebody WhoIs;
-        public void SetWhoIs(Somebody whoIs)
-        {
-            SetWhatIs(whoIs);
-        }
-
+        public Somebody WhoIs;
+        
         /// <summary>
         /// Same as ToWhat (synonym).
         /// </summary>
 		[SynonymousTo("ToWhat")]
-		public readonly Somebody ToWhom;
-        public void SetToWhom(Somebody toWhom)
-        {
-            SetToWhat(toWhom);
-        }
-
+		public Somebody ToWhom;
+        
         /// <summary>
         /// Identification of the relation
         /// </summary>

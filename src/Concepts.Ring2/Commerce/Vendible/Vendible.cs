@@ -632,7 +632,7 @@ namespace Concepts.Ring2 // Concepts.Ring2 means that approximatelly 50% of the 
                         isSupplier = true;
                         break;
                     }
-                    c = c.MotherCompany;
+                    //TODO:c = c.MotherCompany;
                 }
             }
             else

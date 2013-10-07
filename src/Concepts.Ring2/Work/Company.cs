@@ -16,50 +16,49 @@ namespace Concepts.Ring2
         /// <summary>
         /// Mother company to this company.
         /// </summary>
-        
-        public Company MotherCompany
+
+        /*public Company MotherCompany
         {
             get
             {
-                /* TODO
+                 TODO
                 Subsidiary sub = this as Subsidiary;
                 return (sub == null) ? null : sub.MotherCompany;
-                 * */
+                 * 
                 return null;
             }
-        }
+        }*/
 
         /// <summary>
         /// All daughter companies of this company.
         /// </summary>
-        
-        public IEnumerable<Company> DaughterCompanies
+        /*public IEnumerable<Company> DaughterCompanies
         {
             get
             {
                 return this.ImplicitlyRelatedObjects<Company, Subsidiary>();
             }
-        }
+        }*/
+
 
         /// <summary>
         /// Adds companies to att ref list.
         /// </summary>
         /// <param name="company"></param>
         /// <param name="list"></param>
-        private void AddChildren(Company company, ref ArrayList list)
+        /*private void AddChildren(Company company, ref ArrayList list)
         {
             foreach (Company daughterCompany in company.DaughterCompanies)
             {
                 list.Add(daughterCompany);
                 AddChildren(daughterCompany, ref list);
             }
-        }
+        }*/
 
         /// <summary>
         /// All daughter companies recursive.
         /// </summary>
-        
-        public Company[] AllSubsidiaries
+     /*   public Company[] AllSubsidiaries
         {
             get
             {
@@ -68,25 +67,25 @@ namespace Concepts.Ring2
                 return (Company[])arr.ToArray(typeof(Company));
             }
         }
-
+        */
         /// <summary>
         /// Adds a daughter company to this company.
         /// </summary>
         /// <param name="company"></param>
-        public void AddDaughterCompany(Company company)
+        /*public void AddDaughterCompany(Company company)
         {
             Subsidiary subsidiary = new Subsidiary();
             subsidiary.SetMotherCompany(this);
             subsidiary.SetDaughterCompany(company);
-        }
+        }*/
 
         /// <summary>
         /// Removes the Subsidiary role between this company and the specifies 
         /// daughter company.
         /// </summary>
-        public void RemoveAsDaughterCompany()
+        /*public void RemoveAsDaughterCompany()
         {
-            /* TODO
+             TODO
             using (SqlEnumerator sqlenum = Sql.GetEnumerator("SELECT result FROM " + Subsidiary.Kind.GetInstance<Subsidiary>().FullInstanceClassName + " result WHERE result.ToWhat=variable(" + Company.Kind.GetInstance<Company.Kind>().FullInstanceClassName + ", company)"))
             {
                 sqlenum.SetVariable("company", this);
@@ -95,15 +94,15 @@ namespace Concepts.Ring2
                     (sqlenum.Current as Subsidiary).Delete();
                 } 
             }
-             */
         }
-
-
+                 */
+        
+        /*
         protected override void OnDelete()
         {
             base.OnDelete();
             this.RemoveAsDaughterCompany();
-        }
+        }*/
 
         /// <summary>
         /// Finds the consumer role towards the given somebody,
@@ -113,7 +112,7 @@ namespace Concepts.Ring2
         /// </summary>
         /// <param name="somebody"></param>
         /// <returns></returns>
-        public Consumer AsConsumer(Somebody somebody)
+       /* public Consumer AsConsumer(Somebody somebody)
         {
             Consumer consumer = this.RelationTo<Consumer>(somebody);
 
@@ -128,7 +127,7 @@ namespace Concepts.Ring2
             }
 
             return consumer;
-        }
+        }*/
 
         /// <summary>
         /// Finds the supplier role towards the given somebody,
@@ -138,7 +137,7 @@ namespace Concepts.Ring2
         /// </summary>
         /// <param name="somebody"></param>
         /// <returns></returns>
-        public Somebody AsSupplier(Somebody somebody)
+      /*  public Somebody AsSupplier(Somebody somebody)
         {
             // We call the consumer relation below because we are the supplier of that relation.
             Consumer consumer = somebody.RelationTo<Consumer>(this);
@@ -159,7 +158,7 @@ namespace Concepts.Ring2
             }
 
             return supplier;
-        }
+        }*/
 
         ///// <summary>
         ///// For a company we need to add the mother companies, they have lower priority than the group owners

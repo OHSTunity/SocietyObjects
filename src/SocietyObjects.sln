@@ -12,8 +12,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring3", "Concepts.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring4", "Concepts.Ring4\Concepts.Ring4.csproj", "{B98738EC-CB60-40C6-A378-8F128898BB37}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Concepts.Ring8.Tunity", "Concepts.Ring8.Tunity\Concepts.Ring8.Tunity.csproj", "{023591A6-3FE7-46D6-816E-970781BC5CA4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,10 +34,6 @@ Global
 		{B98738EC-CB60-40C6-A378-8F128898BB37}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B98738EC-CB60-40C6-A378-8F128898BB37}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B98738EC-CB60-40C6-A378-8F128898BB37}.Release|Any CPU.Build.0 = Release|Any CPU
-		{023591A6-3FE7-46D6-816E-970781BC5CA4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{023591A6-3FE7-46D6-816E-970781BC5CA4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{023591A6-3FE7-46D6-816E-970781BC5CA4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{023591A6-3FE7-46D6-816E-970781BC5CA4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

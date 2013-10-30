@@ -8,11 +8,13 @@
 */
 
 using System;
+using System.Linq;
 using System.Collections.Generic;
 using Concepts.Ring1;
 using Concepts.Ring4;
 using Concepts.Ring8.Tunity;
 using Starcounter;
+using Starcounter.Advanced;
 
 namespace Concepts.Ring8.Tunity
 {
@@ -41,6 +43,9 @@ namespace Concepts.Ring8.Tunity
             ObjectState = ObjectState.Active;
             Activity = activity;
         }
+
+        public TodoList List;
+
 
         public ObjectState ObjectState
         {
@@ -192,6 +197,13 @@ namespace Concepts.Ring8.Tunity
             }
         }
 
+        public int CommentCount
+        {
+            get
+            {
+                return Comments.Count();
+            }
+        }
 
         //****************************************
         // Portfolio

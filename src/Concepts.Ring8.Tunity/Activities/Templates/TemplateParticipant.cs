@@ -9,6 +9,7 @@
 
 
 using Concepts.Ring1;
+using System;
 using Starcounter;
 using System.Collections.Generic;
 
@@ -16,5 +17,14 @@ namespace Concepts.Ring8.Tunity
 {
     public class TemplateParticipant : Concepts.Ring1.Participant
     {
+        public TemplateParticipant()
+        {
+            Responsible = false;
+        }
+
+        public Boolean Responsible;
+
+        [SynonymousTo("ToWhat")]
+        public Template Template;
     }
 }

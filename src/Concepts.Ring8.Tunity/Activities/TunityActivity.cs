@@ -182,22 +182,27 @@ namespace Concepts.Ring8.Tunity
         {
             get
             {
-                return ImplicitlyRelatedObject<Person, Responsible>();
+                return Db.SQL<Person>(
+                    "Select p FROM Person p JOIN ActivityParticipant r WHERE " +
+                    "r.WhoIs=p AND r.ToWhat=? AND r.Responsible=?", this, true).First;
             }
             set
             {
-                Responsible res = ImplicitRole<Responsible>();
-                if (res.WhoIs == value)
-                    return;
-                if (res != null)
+                Boolean found = false;
+                foreach (ActivityParticipant participant in Db.SQL<ActivityParticipant>(
+                    "Select r FROM ActivityParticipant r WHERE r.ToWhat=?",this))
                 {
-                    res.Delete();
+                    if (participant.WhoIs != value)
+                        participant.Responsible = false;
+                    else
+                    {
+                        found = true;
+                        participant.Responsible = true;
+                    }
                 }
-                if (value != null)
+                if (!found)
                 {
-                    res = new Responsible();
-                    res.SetWhoIs(value);
-                    res.SetToWhat(this);
+                    new ActivityParticipant() { WhoIs = value, ToWhat = this, Responsible = true };
                 }
             }
         }
@@ -293,7 +298,7 @@ namespace Concepts.Ring8.Tunity
             }
             set
             {
-                //base.EndTime = value.Date.AddDays(1).Subtract(new TimeSpan(0,0,1));
+                base.EndTime = value.Date.AddDays(1).Subtract(new TimeSpan(0,0,1));
             }
         }
 

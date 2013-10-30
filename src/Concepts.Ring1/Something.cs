@@ -122,14 +122,13 @@ namespace Concepts.Ring1
         }
 
        
-       /* [DebuggerHidden]
-        public string ObjectID
+        public string DbIDString
         {
             get
             {
                 return DbHelper.GetObjectID(this);
             }
-        }*/
+        }
 
        
 

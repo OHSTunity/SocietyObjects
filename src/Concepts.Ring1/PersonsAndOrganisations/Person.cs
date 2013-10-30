@@ -80,6 +80,20 @@ namespace Concepts.Ring1
         /// </summary>
         public string Surname;
 
+
+        /// <summary>
+        /// The persons age
+        /// </summary>
+        public DateTime BirthDate;
+
+        public uint YearOld
+        {
+            get
+            {
+                return (uint)Math.Abs(DateTime.Now.Year - BirthDate.Year);
+            }
+        }
+
         /// <summary>
         /// Fullname of a person is FirstName and Surname.
         /// </summary>

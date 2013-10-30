@@ -10,16 +10,22 @@
 
 using System;
 using Concepts.Ring1;
+using Starcounter;
 
 namespace Concepts.Ring8.Tunity
 {
-    /// <summary>
-    /// Extension to class ParticipatingThing to handle if an Event has been viewed by the user.
-    /// </summary>
-    public sealed class TunityParticipant : ParticipatingThing
+   public class ActivityParticipant : Concepts.Ring1.Participant
     {
-        public Boolean SendReminder;
+       public ActivityParticipant()
+       {
+           Responsible = false;
+       }
 
-        public DateTime LastViewed;
+       public Boolean Responsible;
+       public Boolean SendReminder;
+       public DateTime LastViewed;
+
+       [SynonymousTo("ToWhat")]
+       public TunityActivity Activity;
     }
 }

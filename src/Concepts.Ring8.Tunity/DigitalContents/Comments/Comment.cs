@@ -37,7 +37,7 @@ namespace Concepts.Ring8.Tunity
 
         public static IEnumerable<Comment> GetCommentsFor(Something something)
         {
-            return Db.SQL<Comment>("SELECT a FROM Comment a WHERE a.Active=true AND a.Target=?", something);
+            return Db.SQL<Comment>("SELECT a FROM Comment a WHERE a.Target=?", something);
         }
 
 

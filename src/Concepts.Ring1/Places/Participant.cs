@@ -21,10 +21,6 @@ namespace Concepts.Ring1
         /// Same as WhatIs (synonym).
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly Somebody WhoIs;
-        public void SetWhoIs(Somebody whoIs)
-        {
-            SetWhatIs(whoIs);
-        }
+        public Somebody WhoIs;
     }
 }

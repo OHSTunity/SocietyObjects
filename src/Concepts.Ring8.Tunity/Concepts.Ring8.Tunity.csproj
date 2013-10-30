@@ -45,13 +45,29 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\sc\Level1\bin\Debug\Starcounter.dll</HintPath>
     </Reference>
-    <Reference Include="Starcounter.XSON">
-      <HintPath>$(StarcounterBin)\Starcounter.XSON.dll</HintPath>
-      <Private>False</Private>
+    <Reference Include="Starcounter.Bootstrap, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\Level1\bin\Debug\Starcounter.Bootstrap.dll</HintPath>
+    </Reference>
+    <Reference Include="Starcounter.Hypermedia, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\Level1\bin\Debug\Starcounter.Hypermedia.dll</HintPath>
     </Reference>
     <Reference Include="Starcounter.Internal, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>C:\sc\level1\bin\Debug\Starcounter.Internal.dll</HintPath>
+    </Reference>
+    <Reference Include="Starcounter.Node, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\level1\bin\Debug\Starcounter.Node.dll</HintPath>
+    </Reference>
+    <Reference Include="Starcounter.REST, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=AMD64">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\Level1\bin\Debug\Starcounter.REST.dll</HintPath>
+    </Reference>
+    <Reference Include="Starcounter.XSON, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d2df1e81d0ca3abf, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\sc\Level1\bin\Debug\Starcounter.XSON.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -65,7 +81,6 @@
     <Compile Include="Activities\Labels\ActivityLabelRelation.cs" />
     <Compile Include="Activities\Templates\Template.cs" />
     <Compile Include="Activities\Templates\TemplateParticipant.cs" />
-    <Compile Include="Activities\Templates\TemplateResponsible.cs" />
     <Compile Include="Activities\Templates\UsedTemplate.cs" />
     <Compile Include="Activities\TunityActivity.cs" />
     <Compile Include="Application\LoginGuid.cs" />
@@ -173,6 +188,7 @@
     <Compile Include="Rights\AccessRightGroupMember.cs" />
     <Compile Include="Rights\ObjectRight.cs" />
     <Compile Include="Rights\StoredRight.cs" />
+    <Compile Include="Todo\TodoList.cs" />
     <Compile Include="Todo\Todo.cs" />
     <Compile Include="Todo\TodoStatus.cs" />
     <Compile Include="Trade\VersionCollection.cs" />
@@ -182,7 +198,7 @@
     <Compile Include="User\EmailListMember.cs" />
     <Compile Include="User\LoginInfo.cs" />
     <Compile Include="User\LoginRole.cs" />
-    <Compile Include="User\ParticipatingThingInfo.cs" />
+    <Compile Include="Activities\ActivityParticipant.cs" />
     <Compile Include="User\UserInfo.cs" />
     <Compile Include="utils\DefaultValue.cs" />
     <Compile Include="utils\DescriptionValue.cs" />

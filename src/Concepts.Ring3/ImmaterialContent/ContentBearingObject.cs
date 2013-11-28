@@ -29,7 +29,7 @@ namespace Concepts.Ring3
         /// <summary>
         /// 
         /// </summary>
-        protected override void OnDelete()
+        public override void OnDelete()
         {
             /*TODO
             IEnumerable<ContentAssetRole> assetRoles = this.Roles<ContentAssetRole>();

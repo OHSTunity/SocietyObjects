@@ -27,7 +27,7 @@ namespace Concepts.Ring3
 
          
 
-        protected override void OnDelete()
+        public override void OnDelete()
         {
             // Disconnect
             _belongsTo = null;

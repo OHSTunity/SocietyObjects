@@ -240,7 +240,7 @@ namespace Concepts.Ring1
         public T AssureExclusiveParticipant<T>(Something whatIs) where T : ParticipatingThing
         {
             T exclusiveParticipant = null;
-            SqlResult<T> participants = this.ImplicitRoles<T>();
+            QueryResultRows<T> participants = this.ImplicitRoles<T>();
             foreach (T pt in participants)
             {
                 if (exclusiveParticipant == null && pt.WhatIs == whatIs)

@@ -71,7 +71,7 @@ namespace Concepts.Ring1
     /// <equal>sumo:Entity</equal>
     /// </ontology>
     [Database]
-    public class Something 
+    public class Something: IEntity
     {
         
         protected Something()
@@ -79,7 +79,7 @@ namespace Concepts.Ring1
         {
         }
 
-        protected virtual void OnDelete()
+        public virtual void OnDelete()
         {
         }
 
@@ -178,7 +178,7 @@ namespace Concepts.Ring1
         /// </summary>
         /// <typeparam name="T">Type of Roles to retrieve and return</typeparam>
         /// <returns>All roles of the given typ T</returns>
-        public SqlResult<T> Roles<T>() where T : Role
+        public QueryResultRows<T> Roles<T>() where T : Role
         {
             //TODO:Change to typeof sql string
             return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=?", SqlNamespaceHelper.GetSafe<T>()), this);
@@ -189,7 +189,7 @@ namespace Concepts.Ring1
         /// </summary>
         /// <typeparam name="T">Type of roles to retrieve and return</typeparam>
         /// <returns>All roles of the given type T</returns>
-        public SqlResult<T> ImplicitRoles<T>() where T : Relation
+        public QueryResultRows<T> ImplicitRoles<T>() where T : Relation
         {
             //TODO:Change to typeof sql string
             return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.ToWhat=?", SqlNamespaceHelper.GetSafe<T>()), this);
@@ -224,7 +224,7 @@ namespace Concepts.Ring1
         /// <typeparam name="T">Type of roles to retrieve</typeparam>
         /// <param name="toWhat">The object this object have a relation to</param>
         /// <returns>All relations of the given type T</returns>
-        public SqlResult<T> RelationsTo<T>(Something toWhat) where T : Relation
+        public QueryResultRows<T> RelationsTo<T>(Something toWhat) where T : Relation
         {
             //TODO:Change to typeof sql string
             return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=? AND r.ToWhat=?", 
@@ -237,7 +237,7 @@ namespace Concepts.Ring1
         /// <typeparam name="T">Type of roles to retrieve and return</typeparam>
         /// <param name="WhatIs">The object this object have a relation to</param>
         /// <returns>All relations of the given type T</returns>
-        public SqlResult<T> ImplicitRelationsTo<T>(Something whatIs) where T : Relation
+        public QueryResultRows<T> ImplicitRelationsTo<T>(Something whatIs) where T : Relation
         {
             //TODO:Change to typeof sql string
             return Db.SQL<T>(String.Format("SELECT r FROM {0} r WHERE r.WhatIs=? AND r.ToWhat=?",
@@ -275,7 +275,7 @@ namespace Concepts.Ring1
         /// <typeparam name="T_Object"></typeparam>
         /// <typeparam name="T_Relation"></typeparam>
         /// <returns></returns>
-        public SqlResult<T_Object> RelatedObjects<T_Object, T_Relation>()
+        public QueryResultRows<T_Object> RelatedObjects<T_Object, T_Relation>()
             where T_Object : Something
             where T_Relation : Relation
         {
@@ -290,7 +290,7 @@ namespace Concepts.Ring1
         /// <typeparam name="T_Object"></typeparam>
         /// <typeparam name="T_Relation"></typeparam>
         /// <returns></returns>
-        public SqlResult<T_Object> ImplicitlyRelatedObjects<T_Object, T_Relation>()
+        public QueryResultRows<T_Object> ImplicitlyRelatedObjects<T_Object, T_Relation>()
             where T_Object : Something
             where T_Relation : Relation
         {

@@ -161,7 +161,7 @@ namespace Concepts.Ring3
         }
 
       
-        protected override void OnDelete()
+        public override void OnDelete()
         {
             //Delete all roles to this user
             foreach (var role in Roles<Role>())

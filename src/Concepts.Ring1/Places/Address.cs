@@ -321,7 +321,7 @@ namespace Concepts.Ring1
         {
             set
             {
-                throw new Exception("The " + this.GetType().Name + " does not implement the setting of a MultiLineAddress");
+                // throw new Exception("The " + this.GetType().Name + " does not implement the setting of a MultiLineAddress");
                 // Parse the string and set the individual items (door, street, etc).
             }
             get
@@ -338,7 +338,8 @@ namespace Concepts.Ring1
                 // <CareOf>
                 // <PostCode> <City>
                 // <Country>
-                throw new Exception("The " + this.GetType().Name + " does not implement the get property accessor for a MultiLineAddress");
+                return "";
+                //throw new Exception("The " + this.GetType().Name + " does not implement the get property accessor for a MultiLineAddress");
             }
         }
     }

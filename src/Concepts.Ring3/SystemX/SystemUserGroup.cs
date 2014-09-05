@@ -78,6 +78,10 @@ namespace Concepts.Ring3
         /// <returns></returns>
         public SystemUserGroupMember AddMember(SystemUser user)
         {
+            if (!IsMember(user))
+            {
+                new SystemUserGroupMember() { SystemUserGroup = this, SystemUser = user };
+            }
             return null;//TODO:Kind.GetInstance<SystemUserGroupMember.Kind>().Relate<SystemUserGroupMember>(user, this);
         }
 

@@ -22,16 +22,13 @@ namespace Concepts.Ring3
         /// The system user that is an indirect member of the group.
         /// </summary>
         [SynonymousTo("WhatIs")]
-        public readonly SystemUser SystemUser;
-        public void SetSystemUser(SystemUser systemUser)
-        {
-            SetWhatIs(systemUser);
-        }
+        public SystemUser SystemUser;
+        
 
         /// <summary>
         /// 
         /// </summary>
         [SynonymousTo("ToWhat")]
-        public readonly SystemUserGroup SystemUserGroup;
+        public SystemUserGroup SystemUserGroup;
     }
 }

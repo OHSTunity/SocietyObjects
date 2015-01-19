@@ -350,8 +350,37 @@ namespace Concepts.Ring1
         #endregion
 
         #endregion
+        /*
+        #region operators
+        public override bool Equals(object obj)
+        {
+            return base.Equals(obj);
+        }
 
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+            public static Boolean operator ==(Something x, Something y)
+            {
+                if ((x != null) && (y != null))
+                    return DbHelper.GetObjectID(x) == DbHelper.GetObjectID(y);
+                else
+                    return (x == null && y == null);
+            }
 
+            // Inequality operator. Returns dbNull if either operand is
+            // dbNull, otherwise returns dbTrue or dbFalse:
+            public static Boolean operator !=(Something x, Something y)
+            {
+                if ((x != null) && (y != null))
+                    return DbHelper.GetObjectID(x) != DbHelper.GetObjectID(y);
+                else
+                    return (x == null && y == null);
+            }
+
+        #endregion
+        */
     }
 }
 

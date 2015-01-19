@@ -9,7 +9,7 @@ namespace Concepts.Ring2
 	{
 		
         [SynonymousTo("WhatIs")]
-        public readonly TelephoneNumber Number;
+        public TelephoneNumber Number;
 
         public void SetNumber(TelephoneNumber number)
         {
